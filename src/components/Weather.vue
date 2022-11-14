@@ -5,7 +5,7 @@
                 {{getTime(weather.time)}}
             </div>
             <div>
-                <img :src="'/public/weather-svg/' + weather.data.next_1_hours.summary.symbol_code + '.svg'" alt="" class="h-[2vw] w-[2vw]" />
+                <img :src="'./weather-svg/' + weather.data.next_1_hours.summary.symbol_code + '.svg'" alt="" class="h-[2vw] w-[2vw]" />
             </div>
             <div>
                 {{parseInt(weather.data.instant.details.air_temperature)}}&deg;
