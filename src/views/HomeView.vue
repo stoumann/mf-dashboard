@@ -7,8 +7,9 @@
 			</div>
 		</div>
 		<div class="grid col-span-2 grid-cols-3 grid-rows-2 gap-10">
-			<div class="col-span-2 bg-white rounded-lg flex flex-col justify-between relative overflow-hidden">
-				<iframe class="w-full h-full" src="https://www.youtube.com/embed/QzmSpGq025Q/?&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="col-span-2 bg-white rounded-lg flex flex-col justify-between relative overflow-hidden p-10">
+				<span class="text-[2vw] uppercase tracking-wide">Indeklima</span>
+				<ClimateData></ClimateData>
 			</div>
 			<div class="bg-white rounded-lg p-10 flex justify-center items-center relative overflow-hidden">
 				<CurrentTime></CurrentTime>
@@ -38,12 +39,13 @@
 </template>
 
 <script>
+	import ClimateData from '../components/ClimateData.vue';
 	import CurrentTime from '../components/CurrentTime.vue';
 	import PriceRecords from '../components/PriceRecords.vue';
 	import Weather from '../components/Weather.vue';
 
 	export default {
-		components: { PriceRecords, Weather, CurrentTime },
+		components: { PriceRecords, Weather, CurrentTime, ClimateData },
 		data () {
 			return {
 				lunchQueue: 0,
