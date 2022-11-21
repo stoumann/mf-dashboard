@@ -15,11 +15,10 @@
         let today = new Date();
         today.setHours(0,0,0,0);
 
-        const res = await fetch(`/api/query?start=12h-ago&m=avg:TVOC`);
+        const res = await fetch(`/api/query?start=4h-ago&m=avg:CO2eq`);
         const finalRes = await res.json();
 
         let result = Object.entries(finalRes[0].dps);
-        let newResult = [];
 
         let labels = [];
         let data = [];
@@ -33,25 +32,20 @@
             labels: labels,
             datasets: [
                 {
-                    borderColor: '#000000',
+                    borderColor: '#fcd34d',
                     data: data,
                     radius: 0,
-                    borderWidth: 1,
+                    borderWidth: 2,
                 }
             ]
         };
-
-        // result.forEach((element) => {
-        //     newResult.push({
-        //         date: element[0],
-        //         value: element[1]
-        //     });
-        // });
-
-        // state.climateData = newResult;
     }
 
     getData();
+
+    setInterval(() => {
+        getData();
+    }, 20000);
 
     function formatDate (date) {
         return ('0' + new Date(parseInt(date) * 1000).getHours()).slice(-2) + ':00';;

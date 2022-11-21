@@ -45,6 +45,7 @@ export default defineComponent({
                     ticks: {
                       source: 'auto',
                       autoSkip: true,
+                      color: "white",
                     },
 					grid: {
 						lineWidth: 0,
@@ -52,6 +53,9 @@ export default defineComponent({
 				},
 				y: {
 					display: true,
+                    ticks: {
+                        color: "white",
+                    },
 					grid: {
 						lineWidth: 0,
 					}

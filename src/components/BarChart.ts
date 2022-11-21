@@ -36,6 +36,9 @@ export default defineComponent({
 			scales: {
 				x: {
 					display: true,
+                    ticks: {
+                        color: "white",
+                    },
 					grid: {
 						lineWidth: 0,
 					}
@@ -57,7 +60,8 @@ export default defineComponent({
 				datalabels: {
 					color: 'white',
 					font: {
-						weight: 'bold'
+						weight: 'bold',
+						size: '16px'
 					},
 					formatter: function(value) {
 						return parseFloat(value).toLocaleString('da-DK') + ',-';

@@ -5,3 +5,8 @@
 body {
     font-family: 'Bebas Neue', cursive;
 }
+
+.outline-text:not(.no-outline) {
+    color: rgb(30 41 59);
+    text-shadow: -0.05vw -0.05vw 0 #a5b4fc, 0.05vw -0.05vw 0 #a5b4fc, -0.05vw 0.05vw 0 #a5b4fc, 0.05vw 0.05vw 0 #a5b4fc, 0 0 .5vw #a5b4fc;
+}

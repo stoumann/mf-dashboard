@@ -1,16 +1,16 @@
 <template>
     <div v-for="weather in state.weatherData" class="text-[0.8vw]">
         <div class="flex items-center justify-between">
-            <div class="text-center">
+            <div class="w-1/4">
                 {{getTime(weather.time)}}
             </div>
-            <div>
+            <div class="w-1/4 flex justify-center">
                 <img :src="'./weather-svg/' + weather.data.next_1_hours.summary.symbol_code + '.svg'" alt="" class="h-[2vw] w-[2vw]" />
             </div>
-            <div>
+            <div class="w-1/4 text-center">
                 {{parseInt(weather.data.instant.details.air_temperature)}}&deg;
             </div>
-            <div class="flex items-center">
+            <div class="flex items-center w-1/4 justify-end">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 transform" :style="['rotate: ' + weather.data.instant.details.wind_from_direction + 'deg']">
                     <path fill-rule="evenodd" d="M10 5a.75.75 0 01.75.75v6.638l1.96-2.158a.75.75 0 111.08 1.04l-3.25 3.5a.75.75 0 01-1.08 0l-3.25-3.5a.75.75 0 111.08-1.04l1.96 2.158V5.75A.75.75 0 0110 5z" clip-rule="evenodd" />
                 </svg>

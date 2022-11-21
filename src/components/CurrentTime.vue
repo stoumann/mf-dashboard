@@ -1,5 +1,5 @@
 <template>
-    <div class="text-[11vw] break-words leading-none text-left text-slate-600 font-bold">{{state.hour}}<span class="transition-all duration-1000 ease-in-out" :class="{'text-transparent': !state.blinkOn}">:</span><span class="block">{{state.minutes}}</span></div>
+    <div class="text-[11vw] break-words leading-none tracking-widest text-left font-bold">{{state.hour}}<span class="transition-all duration-1000 ease-in-out" :class="{'text-transparent': !state.blinkOn}">:</span>{{state.minutes}}</div>
 </template>
 
 <script setup>

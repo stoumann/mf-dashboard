@@ -14,6 +14,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': 'http://pi-builder:6182',
+      '/rest': 'https://region02eu5.fusionsolar.huawei.com',
     }
   }
 })
