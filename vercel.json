@@ -1,0 +1,7 @@
+{
+    "rewrites": [
+        { "source": "/api/:path(.*)", "destination": "http://pi-builder:6182/api/:path" },
+        { "source": "/rest/:path(.*)", "destination": "https://region02eu5.fusionsolar.huawei.com/rest/:path" },
+        { "source": "/(.*)", "destination": "/index.html" }
+    ]
+}
