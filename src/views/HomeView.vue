@@ -17,13 +17,11 @@
 </template>
 
 <script>
-	import ClimateData from '../components/ClimateData.vue';
 	import CurrentTime from '../components/CurrentTime.vue';
-	import PriceRecords from '../components/PriceRecords.vue';
 	import SolarPanels from '../components/SolarPanels.vue';
 	import Weather from '../components/Weather.vue';
 
 	export default {
-		components: { PriceRecords, Weather, CurrentTime, ClimateData, SolarPanels },
+		components: { Weather, CurrentTime, SolarPanels },
 	}
 </script>
