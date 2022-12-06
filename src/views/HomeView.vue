@@ -1,5 +1,5 @@
 <template>
-	<div class="fixed inset-0 grid grid-cols-3 grid-rows-1 gap-10 bg-slate-900 text-slate-100 p-10 box-border">
+	<div class="fixed inset-0 grid grid-cols-3 grid-rows-1 gap-10 bg-slate-900 text-slate-100 p-24 box-border">
 		<div class="col-span-2 grid grid-rows-2 gap-10 overflow-hidden">
 			<div class="row-span-2">
 				<SolarPanels></SolarPanels>
