@@ -38,6 +38,10 @@ export default defineComponent({
 					display: true,
                     ticks: {
                         color: "white",
+						font: {
+							weight: 'bold',
+							size: '16px'
+						},
                     },
 					grid: {
 						lineWidth: 0,
@@ -58,7 +62,7 @@ export default defineComponent({
 					display: false
 				},
 				datalabels: {
-					color: 'white',
+					color: 'black',
 					font: {
 						weight: 'bold',
 						size: '16px'

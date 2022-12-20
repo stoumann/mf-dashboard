@@ -6,10 +6,10 @@
 			</div>
 		</div>
 		<div class="grid grid-rows-4 gap-10">
-			<div class="bg-slate-800 rounded-lg p-10 flex flex-col justify-between relative overflow-hidden row-span-3">
+			<div class="bg-blue-800 rounded-lg p-10 flex flex-col justify-between relative overflow-hidden row-span-3">
 				<Weather />
 			</div>
-			<div class="bg-slate-800 rounded-lg p-10 flex justify-center items-center relative overflow-hidden outline-text">
+			<div class="bg-cyan-700 rounded-lg p-10 flex justify-center items-center relative overflow-hidden outline-text">
 				<CurrentTime></CurrentTime>
 			</div>
 		</div>
