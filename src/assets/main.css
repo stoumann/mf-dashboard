@@ -7,6 +7,6 @@ body {
 }
 
 .outline-text:not(.no-outline) {
-    @apply text-yellow-500;
+    color: rgb(51, 73, 109);
     text-shadow: -0.05vw -0.05vw 0 #a5b4fc, 0.05vw -0.05vw 0 #a5b4fc, -0.05vw 0.05vw 0 #a5b4fc, 0.05vw 0.05vw 0 #a5b4fc, 0 0 .5vw #a5b4fc;
 }

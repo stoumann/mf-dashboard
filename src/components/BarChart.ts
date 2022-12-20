@@ -62,7 +62,7 @@ export default defineComponent({
 					display: false
 				},
 				datalabels: {
-					color: 'black',
+					color: 'white',
 					font: {
 						weight: 'bold',
 						size: '16px'

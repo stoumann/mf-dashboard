@@ -37,7 +37,7 @@
             labels: labels,
             datasets: [
                 {
-                    backgroundColor: '#d9f99d',
+                    backgroundColor: '#15803d',
                     data: data,
                     borderRadius: 5,
                 }
