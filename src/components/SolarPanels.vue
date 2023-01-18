@@ -22,8 +22,8 @@
             <div class="text-[2vw] text-slate-500">Co2 sparet</div>
         </div>
         <div class="space-y-4 bg-slate-800 rounded-lg p-10 flex items-center justify-between flex-col w-full h-full">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="currentColor" class="w-16 h-16">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1" fill="currentColor" class="w-16 h-16">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
             </svg>
             <div><span class="text-[4vw] leading-none outline-text">{{parseFloat(state.solarData.realKpi.cumulativeEnergy).toFixed(2)}}</span><span class="text-[2vw] text-white">kWh</span></div>
             <div class="text-[2vw] text-slate-500">Udbytte i alt</div>
@@ -71,7 +71,7 @@
         result = JSON.parse(result);
         state.solarData = result;
     }
-    
+
     getData();
 
     setInterval(() => {
