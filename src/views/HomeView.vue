@@ -14,14 +14,17 @@
 			</div>
 		</div>
 	</div>
+
+	<LunchQueue></LunchQueue>
 </template>
 
 <script>
 	import CurrentTime from '../components/CurrentTime.vue';
+	import LunchQueue from '../components/LunchQueue.vue';
 	import SolarPanels from '../components/SolarPanels.vue';
 	import Weather from '../components/Weather.vue';
 
 	export default {
-		components: { Weather, CurrentTime, SolarPanels },
+		components: { Weather, CurrentTime, SolarPanels, LunchQueue },
 	}
 </script>

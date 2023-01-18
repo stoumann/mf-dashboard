@@ -22,12 +22,22 @@
             <div class="text-[2vw] text-slate-500">Co2 sparet</div>
         </div>
         <div class="space-y-4 bg-slate-800 rounded-lg p-10 flex items-center justify-between flex-col w-full h-full">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" class="w-12 h-12">
-                <path d="M210.6 5.9L62 169.4c-3.9 4.2-6 9.8-6 15.5C56 197.7 66.3 208 79.1 208H104L30.6 281.4c-4.2 4.2-6.6 10-6.6 16C24 309.9 34.1 320 46.6 320H80L5.4 409.5C1.9 413.7 0 419 0 424.5c0 13 10.5 23.5 23.5 23.5H192v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448H424.5c13 0 23.5-10.5 23.5-23.5c0-5.5-1.9-10.8-5.4-15L368 320h33.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L344 208h24.9c12.7 0 23.1-10.3 23.1-23.1c0-5.7-2.1-11.3-6-15.5L237.4 5.9C234 2.1 229.1 0 224 0s-10 2.1-13.4 5.9z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="currentColor" class="w-16 h-16">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
             </svg>
-            <span class="text-[7vw] leading-none outline-text">{{state.solarData.socialContribution.equivalentTreePlanting}}</span>
-            <div class="text-[2vw] text-slate-500">Svarer til træer plantet</div>
+            <div><span class="text-[4vw] leading-none outline-text">{{parseFloat(state.solarData.realKpi.cumulativeEnergy).toFixed(2)}}</span><span class="text-[2vw] text-white">kWh</span></div>
+            <div class="text-[2vw] text-slate-500">Udbytte i alt</div>
         </div>
+        <!-- <div class="grid gap-20 grid-rows-2">
+            <div class="space-y-4 bg-slate-800 rounded-lg p-10 flex items-center justify-between flex-col w-full h-full">
+                <div><span class="text-[7vw] leading-none outline-text">3</span></div>
+                <div class="text-[2vw] text-slate-500">Personer i kø</div>
+            </div>
+            <div class="space-y-4 bg-slate-800 rounded-lg p-10 flex items-center justify-between flex-col w-full h-full">
+                <div><span class="text-[7vw] leading-none outline-text">3</span></div>
+                <div class="text-[2vw] text-slate-500">Personer i buffeten</div>
+            </div>
+        </div> -->
         <div class="bg-slate-800 rounded-lg p-10 flex flex-col justify-between relative overflow-hidden col-span-2">
             <span class="text-[2vw] uppercase tracking-wide">Dagens elpriser</span>
             <PriceRecords></PriceRecords>
@@ -61,7 +71,7 @@
         result = JSON.parse(result);
         state.solarData = result;
     }
-
+    
     getData();
 
     setInterval(() => {
