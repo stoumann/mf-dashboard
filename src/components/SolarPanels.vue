@@ -25,7 +25,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1" fill="currentColor" class="w-16 h-16">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
             </svg>
-            <div><span class="text-[4vw] leading-none outline-text">{{parseFloat(state.solarData.realKpi.cumulativeEnergy).toFixed(2)}}</span><span class="text-[2vw] text-white">kWh</span></div>
+            <div><span class="text-[7vw] leading-none outline-text">{{parseFloat(state.solarData.realKpi.cumulativeEnergy / 1000).toFixed(2)}}</span><span class="text-[2vw] text-white">mWh</span></div>
             <div class="text-[2vw] text-slate-500">Udbytte i alt</div>
         </div>
         <div class="bg-slate-800 rounded-lg p-10 flex flex-col justify-between relative overflow-hidden col-span-2">
