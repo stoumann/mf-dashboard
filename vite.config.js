@@ -13,7 +13,6 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      '/api': 'http://pi-builder:6182',
       '/rest': 'https://region02eu5.fusionsolar.huawei.com',
       '/nano4': {
         target: 'http://nano4:5000',

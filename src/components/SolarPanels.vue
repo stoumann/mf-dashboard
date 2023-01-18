@@ -28,16 +28,6 @@
             <div><span class="text-[4vw] leading-none outline-text">{{parseFloat(state.solarData.realKpi.cumulativeEnergy).toFixed(2)}}</span><span class="text-[2vw] text-white">kWh</span></div>
             <div class="text-[2vw] text-slate-500">Udbytte i alt</div>
         </div>
-        <!-- <div class="grid gap-20 grid-rows-2">
-            <div class="space-y-4 bg-slate-800 rounded-lg p-10 flex items-center justify-between flex-col w-full h-full">
-                <div><span class="text-[7vw] leading-none outline-text">3</span></div>
-                <div class="text-[2vw] text-slate-500">Personer i kø</div>
-            </div>
-            <div class="space-y-4 bg-slate-800 rounded-lg p-10 flex items-center justify-between flex-col w-full h-full">
-                <div><span class="text-[7vw] leading-none outline-text">3</span></div>
-                <div class="text-[2vw] text-slate-500">Personer i buffeten</div>
-            </div>
-        </div> -->
         <div class="bg-slate-800 rounded-lg p-10 flex flex-col justify-between relative overflow-hidden col-span-2">
             <span class="text-[2vw] uppercase tracking-wide">Dagens elpriser</span>
             <PriceRecords></PriceRecords>
