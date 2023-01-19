@@ -6,7 +6,7 @@ body {
     font-family: 'Bebas Neue', cursive;
 }
 
-.outline-text:not(.no-outline) {
+/* .outline-text:not(.no-outline) {
     color: rgb(51, 73, 109);
-    text-shadow: -0.05vw -0.05vw 0 #a5b4fc, 0.05vw -0.05vw 0 #a5b4fc, -0.05vw 0.05vw 0 #a5b4fc, 0.05vw 0.05vw 0 #a5b4fc, 0 0 .5vw #a5b4fc;
-}
+    text-shadow: -0.05vw -0.05vw 0 #e2e8f0, 0.05vw -0.05vw 0 #e2e8f0, -0.05vw 0.05vw 0 #e2e8f0, 0.05vw 0.05vw 0 #e2e8f0, 0 0 .5vw #e2e8f0;
+} */

@@ -1,6 +1,6 @@
 <template>
-    <div v-if="state.chartData" class="h-full">
-        <BarChart :chart-data="state.chartData" class="w-full h-full" />
+    <div v-if="state.chartData" class="h-full flex items-end">
+        <BarChart :chart-data="state.chartData" class="w-full h-3/4" />
     </div>
     <div v-else>
         Elpriserne kunne ikke hentes
