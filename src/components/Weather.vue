@@ -11,7 +11,7 @@
                 {{parseInt(weather.data.instant.details.air_temperature)}}&deg;
             </div>
             <div class="flex items-center w-1/4 justify-end">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 transform" :style="['rotate: ' + weather.data.instant.details.wind_from_direction + 'deg']">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-[2vw] w-[2vw] transform text-zinc-400" :style="['rotate: ' + weather.data.instant.details.wind_from_direction + 'deg']">
                     <path fill-rule="evenodd" d="M10 5a.75.75 0 01.75.75v6.638l1.96-2.158a.75.75 0 111.08 1.04l-3.25 3.5a.75.75 0 01-1.08 0l-3.25-3.5a.75.75 0 111.08-1.04l1.96 2.158V5.75A.75.75 0 0110 5z" clip-rule="evenodd" />
                 </svg>
                 <div>
