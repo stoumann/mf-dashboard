@@ -1,11 +1,11 @@
 <template>
-    <div v-for="weather in state.weatherData" class="text-[0.8vw]">
+    <div v-for="weather in state.weatherData" class="text-[2vw]">
         <div class="flex items-center justify-between">
             <div class="w-1/4">
                 {{getTime(weather.time)}}
             </div>
             <div class="w-1/4 flex justify-center">
-                <img :src="'./weather-svg/' + weather.data.next_1_hours.summary.symbol_code + '.svg'" alt="" class="h-[2vw] w-[2vw]" />
+                <img :src="'./weather-svg/' + weather.data.next_1_hours.summary.symbol_code + '.svg'" alt="" class="h-[3vw] w-[3vw]" />
             </div>
             <div class="w-1/4 text-center">
                 {{parseInt(weather.data.instant.details.air_temperature)}}&deg;
@@ -38,7 +38,7 @@
             return tempDate == today;
         });
 
-        state.weatherData = filteredTimes;
+        state.weatherData = filteredTimes.slice(0, 10);
     }
 
     getData();
