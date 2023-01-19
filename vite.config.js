@@ -12,6 +12,7 @@ export default defineConfig({
     }
   },
   server: {
+    port: 8080,
     proxy: {
       '/rest': 'https://region02eu5.fusionsolar.huawei.com',
       '/nano4': {
