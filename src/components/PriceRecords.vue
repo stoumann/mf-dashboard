@@ -27,10 +27,36 @@
         
         let labels = [];
         let data = [];
+        const tax = 1.25;
+        const netTarif = {
+            morning: 0.2431,
+            day: 0.4432,
+            evening: 1.2527,
+            night: 0.4430
+        }
+        const energinetPrice = 0.112;
+        const elTax = 0.008;
 
         finalRes.records.forEach(record => {
             labels.push(formatDate(record.HourDK));
-            data.push(parseFloat((record.SpotPriceDKK / 1000) * 1.25).toFixed(2));
+
+            let totalPrice = record.SpotPriceDKK / 1000;
+            
+            let hour = new Date(record.HourDK).getHours();
+            if (hour >= 0 && hour <= 5) {
+                totalPrice += netTarif.morning;
+            } else if (hour >= 6 && hour <= 16) {
+                totalPrice += netTarif.day;
+            } else if (hour >= 17 && hour <= 20) {
+                totalPrice += netTarif.evening;
+            } else if (hour >= 21 && hour <= 23) {
+                totalPrice += netTarif.night;
+            }
+
+            totalPrice += energinetPrice + elTax;
+            totalPrice = totalPrice * tax;
+
+            data.push(parseFloat(totalPrice).toFixed(2));
         });
 
         state.chartData = {

@@ -68,7 +68,7 @@ export default defineComponent({
 						size: '16px'
 					},
 					formatter: function(value) {
-						return parseFloat(value).toLocaleString('da-DK') + ',-';
+						return parseFloat(value).toLocaleString('da-DK', {minimumFractionDigits: 2});
 					}
 				}
 			}
