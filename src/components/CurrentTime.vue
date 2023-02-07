@@ -1,5 +1,5 @@
 <template>
-    <div class="text-[6.5vw] break-words leading-none tracking-widest text-left font-bold">{{state.hour}}<span class="transition-all duration-500 ease-in-out">:</span>{{state.minutes}}<span class="transition-all duration-500 ease-in-out">:</span>{{state.seconds}}</div>
+    <div class="text-[5.5vw] break-words leading-none text-left font-bold time">{{state.hour}}<span class="transition-all duration-500 ease-in-out">:</span>{{state.minutes}}<span class="transition-all duration-500 ease-in-out">:</span>{{state.seconds}}</div>
 </template>
 
 <script setup>
