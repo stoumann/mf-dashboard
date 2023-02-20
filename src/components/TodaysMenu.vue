@@ -1,7 +1,7 @@
 <template>
     <div class="text-[2vw] tracking-wider">
         Dagens menu, {{ formatDate(state.todaysMenu.updated_at) }} 
-        <div v-if="state.todaysMenu" class="font-light text-slate-400">{{ state.todaysMenu.dish }}</div>
+        <div v-if="state.todaysMenu" class="font-light text-slate-400 group-[.is-big]:text-[3vw] group-[.is-big]:text-white group-[.is-big]:font-bold">{{ state.todaysMenu.dish }}</div>
     </div>
 </template>
 

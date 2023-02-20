@@ -1,16 +1,21 @@
 <template>
-    <div class="fixed inset-0 rounded-3xl z-40 m-10 grid gap-20 grid-cols-2 text-white" :class="[state.queueData.bgClass]" v-if="state.queueData.status == 'on'">
-        <div class="w-full h-full flex items-center justify-center text-[24vh] text-center">
-            <div>
-                {{ state.queueData.buffet }}
-                <div class="text-[6vh]">Personer i buffeten</div>
+    <div class="fixed inset-0 rounded-3xl z-40 m-10 grid grid-rows-4 gap-20 text-white" :class="[state.queueData.bgClass]" v-if="state.queueData.status == 'on'">
+        <div class="grid gap-20 grid-cols-2 row-span-3">
+            <div class="w-full h-full flex items-center justify-center text-[24vh] text-center">
+                <div>
+                    {{ state.queueData.buffet }}
+                    <div class="text-[6vh]">Personer i buffeten</div>
+                </div>
+            </div>
+            <div class="w-full h-full flex items-center justify-center text-[24vh] text-center">
+                <div>
+                    {{ state.queueData.queue }}
+                    <div class="text-[6vh]">Personer i kø</div>
+                </div>
             </div>
         </div>
-        <div class="w-full h-full flex items-center justify-center text-[24vh] text-center">
-            <div>
-                {{ state.queueData.queue }}
-                <div class="text-[6vh]">Personer i kø</div>
-            </div>
+        <div class="text-center group is-big">
+            <TodaysMenu></TodaysMenu>
         </div>
     </div>
     <div class="fixed inset-0 z-50 flex items-center justify-center text-[40vh]" v-if="(state.queueData.buffet + state.queueData.queue) > 12">
@@ -20,6 +25,7 @@
 
 <script setup>
     import { reactive } from 'vue';
+import TodaysMenu from './TodaysMenu.vue';
 
     const state = reactive({ queueData: {status: 'off', buffet: 0, queue: 0, bgClass: 'bg-green-500'} });
 
