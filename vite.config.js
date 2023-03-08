@@ -22,7 +22,15 @@ export default defineConfig({
       '/nano5': {
         target: 'http://nano5:5000',
         rewrite: (path) => path.replace(/^\/nano5/, ""),
-      }
+      },
+      '/prusa1': {
+        target: 'http://prusa1',
+        rewrite: (path) => path.replace(/^\/prusa1/, ""),
+      },
+      '/prusa2': {
+        target: 'http://prusa2',
+        rewrite: (path) => path.replace(/^\/prusa2/, ""),
+      },
     }
   }
 })
