@@ -28,7 +28,7 @@
 		</div>
 	</div>
 
-	<!-- <LunchQueue></LunchQueue> -->
+	<LunchQueue></LunchQueue>
 </template>
 
 <script>
