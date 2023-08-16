@@ -16,6 +16,7 @@
         </div>
         <div class="text-center group is-big">
             <TodaysMenu />
+            <CurrentTime class="text-center text-[3vw] mt-10" />
         </div>
     </div>
     <div class="fixed inset-0 z-50 flex items-center justify-center text-[40vh]" v-if="(state.queueData.buffet + state.queueData.queue) > 12">
@@ -25,7 +26,8 @@
 
 <script setup>
     import { reactive } from 'vue';
-import TodaysMenu from './TodaysMenu.vue';
+    import TodaysMenu from './TodaysMenu.vue';
+import CurrentTime from './CurrentTime.vue';
 
     const state = reactive({ queueData: {status: 'off', buffet: 0, queue: 0, bgClass: 'bg-green-500'} });
 
