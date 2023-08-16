@@ -12,7 +12,7 @@
     const state = reactive({ todaysMenu: {} });
 
     async function getData() {
-        const { data, error } = await supabase.from('todaysmenu').select('id, dish, updated_at').single();
+        const { data, error } = await supabase.from('todaysmenu').select('id, dish, updated_at').order('id', { ascending: false }).single();
 
         state.todaysMenu = data;
     }

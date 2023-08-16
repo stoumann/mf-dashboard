@@ -5,7 +5,7 @@ import { Chart as ChartJS, Title, Tooltip, Legend, LineElement, LinearScale, Poi
 ChartJS.register(Title, Tooltip, Legend, LineElement, LinearScale, PointElement, CategoryScale);
 
 export default defineComponent({
-	name: 'BarChart',
+	name: 'LineChart',
 	components: { Line },
 	props: {
 		chartId: {

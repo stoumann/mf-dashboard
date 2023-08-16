@@ -4,8 +4,9 @@
 			<SolarPanels />
 
 			<div class="grid grid-cols-3 gap-10">
-				<div>
-					<PrusaJobs></PrusaJobs>
+				<div class="gap-10 flex flex-col">
+					<PrusaJobs />
+					<SmellOMeter />
 				</div>
 				<div class="col-span-2 grid grid-rows-6 gap-10">
 					<div class="bg-black rounded-lg p-10 flex flex-col justify-between relative overflow-hidden row-span-2">
@@ -28,7 +29,7 @@
 		</div>
 	</div>
 
-	<LunchQueue></LunchQueue>
+	<LunchQueue />
 </template>
 
 <script>
@@ -39,8 +40,9 @@
 	import Weather from '../components/Weather.vue';
     import PriceRecords from '../components/PriceRecords.vue';
     import TodaysMenu from '../components/TodaysMenu.vue';
+	import SmellOMeter from '../components/SmellOMeter.vue';
 
 	export default {
-		components: { Weather, CurrentTime, SolarPanels, LunchQueue, PrusaJobs, PriceRecords, TodaysMenu },
+		components: { Weather, CurrentTime, SolarPanels, LunchQueue, PrusaJobs, PriceRecords, TodaysMenu, SmellOMeter },
 	}
 </script>
