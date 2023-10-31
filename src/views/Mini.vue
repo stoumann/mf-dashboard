@@ -12,6 +12,9 @@
             <div class="gap-10 flex flex-col">
                 <PrusaJobs />
                 <SmellOMeter />
+                <div class="bg-black rounded-lg p-10 flex items-center justify-center">
+                    <CurrentTime />
+                </div>
             </div>
         </div>
     </div>
@@ -25,4 +28,5 @@
 	import SmellOMeter from '../components/SmellOMeter.vue';
 	import PrusaJobs from '../components/PrusaJobs.vue';
     import Weather from '../components/Weather.vue';
+    import CurrentTime from '../components/CurrentTime.vue';
 </script>

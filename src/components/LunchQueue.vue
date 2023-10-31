@@ -27,7 +27,7 @@
 <script setup>
     import { reactive } from 'vue';
     import TodaysMenu from './TodaysMenu.vue';
-import CurrentTime from './CurrentTime.vue';
+    import CurrentTime from './CurrentTime.vue';
 
     const state = reactive({ queueData: {status: 'off', buffet: 0, queue: 0, bgClass: 'bg-green-500'} });
 
