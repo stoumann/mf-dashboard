@@ -3,9 +3,7 @@
 		<div class="col-span-2 grid grid-rows-2 gap-10 overflow-hidden">
 			<!-- <SolarPanels /> -->
 			<!-- <img src="@/assets/Jannick.jpg" alt="" class="object-cover h-full w-full rounded-lg object-top" /> -->
-			<div class="w-full h-full bg-black rounded-lg flex items-center justify-center text-[2vw]">
-				What should we have here?
-			</div>
+			<RandomPhoto />
 
 			<div class="grid grid-cols-3 gap-10">
 				<div class="gap-10 flex flex-col">
@@ -45,8 +43,9 @@
     import PriceRecords from '../components/PriceRecords.vue';
     import TodaysMenu from '../components/TodaysMenu.vue';
 	import SmellOMeter from '../components/SmellOMeter.vue';
+	import RandomPhoto from '../components/RandomPhoto.vue';
 
 	export default {
-		components: { Weather, CurrentTime, SolarPanels, LunchQueue, PrusaJobs, PriceRecords, TodaysMenu, SmellOMeter },
+		components: { Weather, CurrentTime, SolarPanels, LunchQueue, PrusaJobs, PriceRecords, TodaysMenu, SmellOMeter, RandomPhoto },
 	}
 </script>
