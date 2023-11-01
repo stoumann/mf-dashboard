@@ -30,5 +30,5 @@
 
     setInterval(() => {
         getRandomPhoto();
-    }, 1000 * 60 * 60);
+    }, parseInt(1000 * 60 * 60));
 </script>
